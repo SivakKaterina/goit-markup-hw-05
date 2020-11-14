@@ -196,10 +196,31 @@ ul {
   border-radius: 4px;
 }
 .img {
+  position: relative;
   width: 370px;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  opacity: 0;
+}
+.img:hover .overlay {
+  opacity: 1;
 }
 .list:not(:last-child) {
   margin-right: 30px;
+}
+.description {
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
 }
 .our-team-list {
   width: 270px;
