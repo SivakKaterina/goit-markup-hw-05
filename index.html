@@ -21,7 +21,7 @@
                          <a class="excretion font-style" href="">Студия</a>
                     </li>
                     <li class="item">
-                         <a class="excretion font-style" href="./portfolio.html">Портфолио</a>
+                         <a class="excretion font-style current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="item">
                          <a class="excretion font-style" href="">Контакты</a>
@@ -47,7 +47,7 @@
           <section class="first-section img-container" >
                <div class="container">
                     <h1 class="font-text-one">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГОБИЗНЕСА</h1>
-                    <button class="buttom font-style">Заказать услугу</button>
+                    <button data-open-modal class="buttom font-style">Заказать услугу</button>
                </div>
           </section>
           <section class="list-tasks">
@@ -321,5 +321,33 @@
                </div>
           </div>
      </footer>
+     <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+               <button data-close-modal class="button-backdrop">
+                    <div>
+                         <svg class="svg-button-backdrop" width="30" height="30">
+                              <use href="./img-svg/close.svg#icon-close">
+                              </use>
+                         </svg>
+                    </div>
+               </button>
+          </div>
+     </div>
+     <script>
+          (() => {
+                    const refs = {
+                         openModalBtn: document.querySelector('[data-open-modal]'),
+                         closeModalBtn: document.querySelector('[data-close-modal]'),
+                         modal: document.querySelector('[data-backdrop]'),
+                    };
+
+                    refs.openModalBtn.addEventListener('click', toggleModal);
+                    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+                    function toggleModal() {
+                         refs.modal.classList.toggle('is-hidden');
+                    }
+               })();
+     </script>
 </body>
 </html>
