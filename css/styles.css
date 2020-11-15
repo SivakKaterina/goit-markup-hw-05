@@ -653,7 +653,7 @@ a.font-style {
   margin-right: 10px;
 }
 /* Дз 5 */
-.thumb {
+.link-overlay {
   position: relative;
   overflow: hidden;
 }
