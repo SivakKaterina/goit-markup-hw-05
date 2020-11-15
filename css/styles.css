@@ -125,6 +125,8 @@ footer {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-list:nth-child(3n) {
   margin-right: 0px;
@@ -213,10 +215,6 @@ img {
   bottom: 0px;
   right: 0px;
   background-color: rgba(47, 48, 58, 0.8);
-  opacity: 0;
-}
-.img:hover .overlay {
-  opacity: 1;
 }
 .list:not(:last-child) {
   margin-right: 30px;
@@ -255,6 +253,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .excretion:hover,
 .excretion:focus {
@@ -270,9 +271,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-envelope-hover {
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-excretion:hover,
 .adress-excretion:focus {
@@ -287,6 +293,8 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-excretion:hover .icon-smartphone,
 .adress-excretion:focus .icon-smartphone {
@@ -300,6 +308,8 @@ img {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-footerone:hover,
 .adress-footerone:focus {
@@ -311,6 +321,8 @@ img {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-footer:hover,
 .adress-footer:focus {
@@ -331,6 +343,8 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttom:hover,
 .buttom:focus {
@@ -351,6 +365,8 @@ img {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttomportfolio:hover,
 .buttomportfolio:focus {
@@ -531,10 +547,14 @@ a.font-style {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* svg */
 .svg-logo {
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-befor:hover {
   border: 1px solid #2196f3;
@@ -565,12 +585,16 @@ a.font-style {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* svg */
 .our-team-svg {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link:hover {
   background-color: #2196f3;
@@ -642,6 +666,7 @@ a.font-style {
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
+.link-overlay:hover .portfolio-overlay,
 .link-overlay:hover .portfolio-overlay {
   opacity: 1;
 }
