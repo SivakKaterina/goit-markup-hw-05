@@ -268,7 +268,8 @@ img {
   left: 0;
   bottom: 0px;
   background-color: #2196f3;
-  transition: opacity 250ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 .excretion:hover,
@@ -652,14 +653,10 @@ a.font-style {
   margin-right: 10px;
 }
 /* Дз 5 */
-/* .img-overlay {
-  position: relative;
-  display: block;
-  width: 370px;
-  height: 294px;
-} */
+
 .link-overlay {
   position: relative;
+  overflow: hidden;
 }
 .portfolio-overlay {
   position: absolute;
@@ -670,6 +667,12 @@ a.font-style {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   z-index: 1;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-overlay:hover .portfolio-overlay {
+  transform: translateY(0);
 }
 .img-overlay {
   display: block;
@@ -683,6 +686,7 @@ a.font-style {
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
+
 .link-overlay:hover .portfolio-overlay,
 .link-overlay:hover .portfolio-overlay {
   opacity: 1;
